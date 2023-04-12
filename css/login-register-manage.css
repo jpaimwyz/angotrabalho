@@ -299,7 +299,12 @@ tbody tr td {
   max-width: 60px;
   border-right: 1px solid #323232d4;
 }
+tbody tr td .acao > button{
+  outline: none;
+  border: none;
+  padding: 10px;
 
+}
 thead tr th {
   padding: 5px;
   text-align: start;
