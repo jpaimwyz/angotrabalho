@@ -61,6 +61,12 @@ header{
     border-radius: 5px;
     margin-left: 2em;
 }
+
+.user-logado{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
 /* Content Start*/
 main{
     flex: 1;

@@ -16,6 +16,12 @@ main{
     height: auto;
 }
 
+.user-logado{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
 .filtering{
     background-color: #fff;
     display: flex;
@@ -27,6 +33,7 @@ main{
     border-radius: 3px;
     box-shadow: 1px 1px 5px rgba(69, 66, 100, 0.699);
 }
+
 .filtering h5{
     font-size: 1.3em;
     color:  var(--corTexto);
@@ -48,6 +55,9 @@ main{
     padding: 0 10px;
     border-radius: 3px;
     box-shadow: 1px 1px 3px rgba(69, 66, 100, 0.699);
+}
+.filtering .search::placeholder{
+    color: var(--corTexto);
 }
 .btn-filtering{
     display: flex;
@@ -103,4 +113,17 @@ main{
     padding: 8px;
     border-radius: 3px;
     color: #fff;
+    font-size: .8em;
+}
+.job-card .job-details{
+    padding-top: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    opacity: 0.8;
+    font-size: .7em;
+}
+.job-card .job-details img{
+    width: 10px;
+    height: 10px;
+
 }

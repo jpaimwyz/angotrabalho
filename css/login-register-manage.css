@@ -289,29 +289,21 @@ thead {
   background-color: inherit;
 }
 
-tr {
-  border-bottom: 2  px solid rgb(238, 235, 235)!important;
-}
-
 tbody tr td {
   vertical-align: text-top;
   padding: 6px;
   max-width: 60px;
   border-right: 1px solid #323232d4;
+  border-bottom: 1px solid #323232d4;
 }
-tbody tr td .acao > button{
-  outline: none;
-  border: none;
-  padding: 10px;
 
-}
 thead tr th {
   padding: 5px;
   text-align: start;
   margin-bottom: 50px;
   width: 300px;
   border-right: 1px solid #323232d4;
-  border-bottom: 1px solid #323232d4;;
+  border-bottom: 1px solid #323232d4;
 }
 thead tr th:last-child, tbody tr td:last-child{
   border-right: none;
