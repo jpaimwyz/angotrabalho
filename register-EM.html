@@ -7,101 +7,107 @@
     <title>App Web</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login-register-manage.css">
-</head>
+</head> 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                 <!-- <img src="" alt="logo"> -->
+                <!-- <img src="" alt="logo"> -->
                 JOB
             </a>
-        </div>
-        <img src="img/do-utilizador.svg" alt="" class="user-logado">
+        </div> 
     </header>
     
-   <main>
-    <h1> Cadastre-se agora e tenha acesso <br> aos melhores candidatos.</h1>
-    <div class="container-register">
-        <p class="message">É um Candidato? <a href="register\-CA.html">Cadastre-se aqui</a></p>
-        <form action="#">
-          <div class="user-details">
-            <div class="input-box">
-             <label for="">Nome da Empresa<span class="obrigatorio">*</span></label>
-              <input type="text" placeholder="Insira o nome da empresa" required autocomplete="on">
-  
-              <label for="">Email<span class="obrigatorio">*</span></label>
-              <input type="email" placeholder="Insira o email da empresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on">
+    <main>
+        <h1> Cadastre-se agora e tenha acesso <br> aos melhores candidatos.</h1>
+        <div class="container-register">
+            <p class="message">É um Candidato? <a href="register-CA.html">Cadastre-se aqui</a></p>
+            <form action="#" id="form" name="form">
+                    <div class="input-box">
+                        <label for="nome-empresa">Nome da Empresa<span class="obrigatorio">*</span></label>
+                        <input type="text" placeholder="Insira o nome da empresa" required autocomplete="on" id="nome-empresa" name="nome-empresa">
+                    </div>
+                    <div class="input-box">
+                        <label for="email-empresa">Email<span class="obrigatorio">*</span></label>
+                        <input type="email" placeholder="Insira o email da empresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" id="email-empresa" name="email-empresa">
+                    </div>
+                    <div class="input-box">
+                        <div class="single-container">
+                            <div class="single">
+                                <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
+                                <input type="number" placeholder="Insira o número de telefone" required  id="telefone" name="telefone">
+                            </div>
+                            <div class="single">
+                                <label for="nif">NIF<span class="obrigatorio">*</span></label>
+                                <input type="number" placeholder="Insira o NIF da Empresa" required id="nif" name="nif">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Criar uma senha <span class="obrigatorio">*</span></label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        placeholder="Digite a senha"
+                        title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha" name="senha">
+                    </div>
+                    <div class="input-box">
+                        <label for="senha2">Confirmar Senha <span class="obrigatorio">*</span></label>
+                        <input type="password" placeholder="Repita a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha2" name="senha2">
+                    </div>
+                <span class="message">Ao criar conta, concorda com os nossos <a href="#">Termos e Condições</a></span>
+                <div class="button">
+                    <input type="submit" value="Cadastrar">
+                </div>
+                <p class="message">Já tem conta? <a href="login-page.html">Iniciar Sessão</a></p>
+                </form>
+            </form>
+        </div>
+    </main>
 
-            <div class="single-container">
-                <div class="single">
-                      <label for="">Telefone<span class="obrigatorio">*</span></label>
-                      <input type="number" placeholder="Insira o número de telefone" required min="0" max="999999999">
-                </div>
-                <div class="single">
-                      <label for="">NIF<span class="obrigatorio">*</span></label>
-                      <input type="number" placeholder="Insira o NIF da Empresa" required min="0" max="999999999">
-                </div>
-            </div>
+    <footer>
+        <section class="footer-container">
+            <article class="footer-row copyright">
+                <img src="img/pexels-fauxels-3184287.jpg" alt="logo" style="width: 80px; height: 80px;" class="logo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam veritatis eos assumenda, quidem perspiciatis deserunt voluptatibus exercitationem obcaecati et sint alias laboriosam vel illo quia suscipit eaque, delectus nihil consequuntur?</p>
+                <hr>
+                <nav class="social">
+                    <a href="" ><img src="img/facebook.svg" alt="Imagem do facebook" title="Visite nossa página"></a>
+                    <a href=""><img src="img/twitter.svg" alt="Imagem do Twitter" title="Visite nossa página"></a>
+                    <a href=""><img src="img/discord.svg" alt="Imagem do Discord" title="Visite nossa comunidade"></a>
+                </nav>
+                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article class="footer-row utilities">
+                <h2>Nome da Empresa</h2>
+                <nav class="menu">
+                    <a href="">Quem somos</a>
+                    <a href="">Termos e Condições</a>
+                    <a href="">Contate-nos</a>
+                    <a href="">Publicidade</a>
+                </nav>
+            </article>
             
-              <label for="">Criar uma senha <span class="obrigatorio">*</span></label>
-              <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              placeholder="Digite a senha" 
-              title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
-              
-              <label for="">Confirmar Senha <span class="obrigatorio">*</span></label>
-              <input type="password" placeholder="Repita a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
-          </div>
-          <div class="button">
-            <input type="submit" value="Cadastrar">
-          </div>
-          <p class="message">Já tem conta? <a href="login-page.html">Iniciar Sessão</a>
-        </form>
-   </main>
-   <footer>
-    <section class="footer-container">
-        <article class="footer-row copyright">
-            <img src="img/pexels-fauxels-3184287.jpg" alt="logo" style="width: 80px; height: 80px;" class="logo">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam veritatis eos assumenda, quidem perspiciatis deserunt voluptatibus exercitationem obcaecati et sint alias laboriosam vel illo quia suscipit eaque, delectus nihil consequuntur?</p>
-            <hr>
-            <nav class="social">
-                <a href="" ><img src="img/facebook.svg" alt="Imagem do facebook" title="Visite nossa página"></a>
-                <a href=""><img src="img/twitter.svg" alt="Imagem do Twitter" title="Visite nossa página"></a>
-                <a href=""><img src="img/discord.svg" alt="Imagem do Discord" title="Visite nossa comunidade"></a>
-            </nav>
-            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article class="footer-row utilities">
-            <h2>Nome da Empresa</h2>
-            <nav class="menu">
-                <a href="">Quem somos</a>
-                <a href="">Termos e Condições</a>
-                <a href="">Contate-nos</a>
-                <a href="">Publicidade</a>
-            </nav>
-        </article>
-        
-        <article class="footer-row utilities">
-            <h2>Candidatos</h2>
-            <nav class="menu">
-                <a href="">Ajuda</a>
-                <a href="">Aviso Legal</a>
-                <a href="">Vagas</a>
-                <a href="">Política de Privacidade</a>
-            </nav>
-        </article>
-        <article class="footer-row utilities">
-            <h2>Empregradores</h2>
-            <nav class="menu">
-                <a href="">Ajuda</a>
-                <a href="">Aviso Legal</a>
-                <a href="">Preços e Serviços</a>
-                <a href="">Política de Privacidade</a>
-            </nav>
-        </article>
-    </section>
-   </footer>
-   <script src="js/script.js"></script>
-   <script src="js/login-register.js"></script>
+            <article class="footer-row utilities">
+                <h2>Candidatos</h2>
+                <nav class="menu">
+                    <a href="">Ajuda</a>
+                    <a href="">Aviso Legal</a>
+                    <a href="">Vagas</a>
+                    <a href="">Política de Privacidade</a>
+                </nav>
+            </article>
+            <article class="footer-row utilities">
+                <h2>Empregradores</h2>
+                <nav class="menu">
+                    <a href="">Ajuda</a>
+                    <a href="">Aviso Legal</a>
+                    <a href="">Preços e Serviços</a>
+                    <a href="">Política de Privacidade</a>
+                </nav>
+            </article>
+        </section>
+    </footer>
+    <script defer src="js/script.js"></script>
+    <script src="js/login-register.js"></script>
 </body>
 </html>
