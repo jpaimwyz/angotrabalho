@@ -184,7 +184,11 @@ font-size: 2vh;
 }
 .message a{
   color: var(--corDestaque1);
-  font-weight: 500;
+  font-weight: 600;
+}
+.message a:hover{
+  color: inherit;
+  text-decoration: underline 2px var(--corDestaque1);
 }
 .obrigatorio{
   color: red;
@@ -231,9 +235,7 @@ form .button input{
   width: 700px;
 }
 
-
- /* MANAGE */
-    
+ /* MANAGE */ 
 .container-manage {
   width: 80vw;
   height: 65vh;
@@ -257,6 +259,17 @@ form .button input{
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+}
+.flex-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-btn img{
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  filter: invert(1);
 }
 .divTable {
   padding: 10px;
