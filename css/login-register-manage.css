@@ -46,7 +46,7 @@ main h1{
 /* LOGIN */
 .form-container-login {
     width: 500px;
-    height: 500px;
+    height: auto;
     border-radius: 0.75em;
     background-color: #fff;
     padding: 2.3em;
