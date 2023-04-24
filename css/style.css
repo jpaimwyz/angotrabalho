@@ -26,7 +26,7 @@ header,.info-container, .info-row, .info-row2, .services-row
 .brand-container, .copyright .social{
     align-items: center;
 } 
-.logo a, .nav-menu a, .info-category, .info-btn-check, footer, .footer-row a, .copyright p, .utilities h2, .utilities a, .utilities a:hover{
+.logo, .nav-menu a, .info-category, .info-btn-check, footer, .footer-row a, .copyright p, .utilities h2, .utilities a, .utilities a:hover{
     color: var(--corPrimaria);
 }
 
@@ -45,10 +45,12 @@ header{
     top: 0;
     left: 0;
 }
-.logo a{
-    font-size: 2em;
-    padding: 15px;
-    font-weight: 600;
+.logo{
+    padding: 3px;
+}
+.logo img{
+    width: 230px;
+    height: auto;
 }
 .nav-menu a{
     padding: 8px;
@@ -175,9 +177,9 @@ main{
     width: 200px;
     height: 200px;
 }
-.brand-images:last-child{
-    margin-right: 0;
-}
+    .brand-images:last-child{
+        margin-right: 0;
+    }
 .brand-images img{
     object-fit: cover;
     width: 100%;
@@ -187,7 +189,6 @@ main{
 footer{
     background-color: var(--corSecundaria1);
     height: auto;
-
 }
 .footer-container{
     padding-top: 5em;
@@ -208,7 +209,9 @@ footer{
     align-self: flex-start;
 }
 .copyright .logo{
-    margin-bottom: 15PX;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 3px;
 }
 .copyright p{
     padding: 4px;
@@ -247,4 +250,4 @@ footer{
     font-size: 1.2em;
     padding-bottom: 8px;
 }
-.utilities a:hover{ text-decoration: underline solid rgb(196, 196, 196)  1px; }
+    .utilities a:hover{ text-decoration: underline solid rgb(196, 196, 196)  1px; }
