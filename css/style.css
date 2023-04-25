@@ -26,7 +26,7 @@ header,.info-container, .info-row, .info-row2, .services-row
 .brand-container, .copyright .social{
     align-items: center;
 } 
-.logo, .nav-menu a, .info-category, .info-btn-check, footer, .footer-row a, .copyright p, .utilities h2, .utilities a, .utilities a:hover{
+.logo, .nav-menu a, .info-btn-check, footer, .footer-row a, .copyright p, .utilities h2, .utilities a, .utilities a:hover{
     color: var(--corPrimaria);
 }
 
@@ -153,7 +153,8 @@ main{
     max-width: 170px;
     width: 100%;
     max-height: 200px;
-    align-self: flex-start;
+    align-self: flex-end;
+    margin: 10px;
 }
 .services-row h2{
     padding: 9px 0 6px 0;
@@ -172,19 +173,6 @@ main{
     justify-content: center;
     background-color: var(--corPrimaria);
 }
-.brand-images {
-    margin: 3em;
-    width: 200px;
-    height: 200px;
-}
-    .brand-images:last-child{
-        margin-right: 0;
-    }
-.brand-images img{
-    object-fit: cover;
-    width: 100%;
-}
-
 /* footer start */
 footer{
     background-color: var(--corSecundaria1);
@@ -251,3 +239,104 @@ footer{
     padding-bottom: 8px;
 }
     .utilities a:hover{ text-decoration: underline solid rgb(196, 196, 196)  1px; }
+
+/* Index Candidatos */
+.banner{
+    padding: 10px 20px;
+    background-color: var(--corSecundaria2);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner .content{
+    color: var(--corPrimaria);
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.4em;
+    line-height: 2.1em;
+}
+
+.banner .content h1 span, .banner .content p{
+    color: var(--corTexto);
+    font-style: italic;
+}
+
+.banner .form-search{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--corPrimaria);
+    width: 1200px;
+    padding: 6px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.form-search .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-right: 4px;
+}
+    .form-search .form-group:last-child{
+        margin-left: 10px;
+    }
+    .form-search .form-group:nth-child(2) select{
+        border: none;
+    }
+.form-search .form-group input, select{
+    width: inherit;
+    height: 45px;
+    outline: 0;
+    padding: 0 80px 0 30px;
+    border: none;
+    border-right: 2px solid #ccc;
+    background-color: inherit;
+    appearance: none;
+}
+
+.form-search .form-group button{
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: var(--corSecundaria1);
+    border-radius: 30px;
+}
+.form-search .form-group button img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.row{
+    padding: 4em;
+    background-color: inherit;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+
+
+}
+.row img{
+    width: 300px;
+    height: auto;
+}
+.row .row_content{
+    margin-left: 30px;
+    line-height: 2em;
+    padding: 20px;
+    background-color: tomato;
+    width: auto;
+    color: var(--corTexto);
+}
+.row_content h5{
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
