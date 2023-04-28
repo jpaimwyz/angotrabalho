@@ -7,7 +7,7 @@
     <title>AngoTrabalho | Seu portal de recrutamento e seleção</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/login-register-manage.css">
 
 </head>
 <body>
@@ -18,7 +18,30 @@
         <img src="img/do-utilizador.svg" alt="" class="user-logado">
     </header>
     <main>
-        
+        <div class="container-post">
+            <div class="group-input">
+                <input type="text" name="titulo_vaga" id="titulo_vaga" placeholder="Título da vaga">
+            </div>
+            <div class="group-input">
+                <label for="area_vaga">Área</label>
+                <select name="area_vaga" id="area_vaga">
+                    <option value="" selected disabled>Selecione a área</option>
+                    <option value="">Lorem ipsum dolor sit amet.</option>
+                    <option value="">Lorem ipsum dolor sit amet.</option>
+                    <option value="">Lorem ipsum dolor sit amet.</option>
+                    <option value="">Lorem ipsum dolor sit amet.</option>
+                    <option value="">Lorem ipsum dolor sit amet.</option>
+                </select>
+            </div>
+            <div class="group-input">
+                <label for="descricao_vaga">Descrição</label>
+                <textarea name="descricao_vaga" id="descricao_vaga" cols="30" rows="20" placeholder="Descreva a vaga, quais competências procura, o perfil ideal..."></textarea>
+            </div>
+            <div class="group-input btn-row">
+                <button type="submit" class="btn-post">Salvar post</button>
+                <button type="submit" class="btn-post">Cancelar</button>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="footer-container">

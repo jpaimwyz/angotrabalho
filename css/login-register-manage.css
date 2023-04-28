@@ -9,22 +9,12 @@
     list-style: none;
 }
 
-
 body{ /* Para fazer o footer ficar sempre embaixo */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4em;
-    padding: 0 7em;
-    background-color: var(--corSecundaria1);
-    width: 100%;
-} */
 main{
     background-color:  var(--corPrimaria);
     flex: 1;
@@ -197,7 +187,8 @@ font-size: 2vh;
 form{
   margin: 20px 0 12px 0;
 }
-.input-box input, select{
+
+.input-box input, .input-box select{
   height: 45px;
   width: 100%;
   margin: 3px 0 15px 0;
@@ -236,7 +227,7 @@ form .button input{
 }
 
  /* MANAGE */ 
-.container-manage {
+.container-manage{
   width: 80vw;
   height: 65vh;
   border-radius: 10px;
@@ -322,5 +313,77 @@ thead tr th:last-child, tbody tr td:last-child{
 
 tbody tr {
   margin-bottom: 50px;
+}
+
+/* CREATE POST */
+.container-post{
+  width: 80vw;
+  background-color: #fff;
+  padding:  2em;
+}
+.container-post .group-input{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.group-input input[type="text"]{
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 2em;
+  padding: 0 4em 0 0;
+  color: var(--corSecundaria1);
+  font-weight: 600;
+}
+.container-post .group-input label{
+  font-size: 18px;
+  padding: 10px;
+  align-self: flex-start;
+  width: 100px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.container-post .group-input select{
+  height: 45px;
+  max-width: 300px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+.container-post .group-input textarea{
+  outline: none;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  border-radius: 5px;
+}
+.group-input .btn-post{
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #049c04;
+}
+.group-input .btn-post:last-child{
+  background-color: rgb(130, 18, 18);
+  margin-right: 0;
+}
+
+.group-input.btn-row{
+  justify-content: flex-end;
+
 }
 

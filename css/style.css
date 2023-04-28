@@ -301,7 +301,7 @@ footer img{
     .form-search .form-group:nth-child(2) select{
         border: none;
     }
-.form-search .form-group input, select{
+.form-search .form-group input, .form-search .form-group select{
     width: inherit;
     height: 45px;
     outline: 0;

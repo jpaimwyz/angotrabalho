@@ -120,8 +120,7 @@ main{
     padding-top: 4px;
     margin-right: 5px;
     display: inline-block;
-    opacity: 0.8;
-    font-size: .7em;
+    font-size: .9em;
 }
 .job-card .job-details img{
     width: 10px;
