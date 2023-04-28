@@ -16,7 +16,7 @@ body{ /* Para fazer o footer ficar sempre embaixo */
     flex-direction: column;
 }
 
-header{
+/* header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ header{
     padding: 0 7em;
     background-color: var(--corSecundaria1);
     width: 100%;
-}
+} */
 main{
     background-color:  var(--corPrimaria);
     flex: 1;
