@@ -133,6 +133,7 @@ main{
     color: var(--corPrimaria);
 }
 .services-container{
+    height: 700px;
     align-items: center;
     justify-content: center;
     background-color: var(--corSecundaria2);
@@ -168,14 +169,14 @@ main{
     align-self: center;
     text-align: justify;
 }
-.brand-container{
+/* .brand-container{
     width: 100%;
     height: auto;
     padding: 80px 0;
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--corPrimaria);
-}
+} */
 /* footer start */
 footer{
     background-color: var(--corSecundaria1);

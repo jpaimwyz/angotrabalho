@@ -66,7 +66,7 @@ main h1{
     margin-bottom: 4px;
   }
   
-  .input-group input {
+  .input-group input, .input-group select {
   height: 45px;
   width: 100%;
   outline: none;
@@ -381,9 +381,85 @@ tbody tr {
   background-color: rgb(130, 18, 18);
   margin-right: 0;
 }
-
 .group-input.btn-row{
   justify-content: flex-end;
+}
+/* Profiles Management */
+.description{
+  font-size: 1.2em;
+  font-weight: 600;
+  align-self: flex-start;
+}
+.profile-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; 
+  width: 100%;
+}
+.profile-container .line-{
+  border-right: 1px solid #ccc;
+}
+.img-settings{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  align-items: center;
+  background-color: #fff;
+  padding: 2em;
+}
+.img-settings .pic .profile-pic{
+  display: block;
+  height: 120px;
+  margin: 10px 0;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  border: 14px solid #ccc;
+}
+.pic button{
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  border-radius: 5px;
+  outline: none;
+  display: inline-flex;
+  align-self: center;
 
 }
+.img-settings .setting{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.setting button, .input-group.profile-g button{
+  width: 100%;
+  margin-bottom: 2px;
+  cursor: pointer;
+  padding: 7px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+}
 
+.setting button:last-child{
+  border: none;
+}
+.profile-container .info-details{
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  padding: 10px;
+}
+.input-group.profile-g button {
+  width: 120px;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.418);
+}
