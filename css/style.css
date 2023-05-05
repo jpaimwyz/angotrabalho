@@ -11,7 +11,6 @@
 :root{
     --fonteBody: "Montserrat", sans-serif;
     --fonteDestaque: "Roboto Mono", monospace;
-
     --corPrimaria: #ebebeb;
     --corSecundaria1: #454264;
     --corSecundaria2: #388659;
@@ -55,10 +54,86 @@ header{
     width: 230px;
     height: auto;
 }
+.profile{
+    position: relative;
+}
+.user-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition:  max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h4{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    padding: 6px;
+}
+.sub-menu-link .icon{
+    font-size: 1.2em;
+}
+.sub-menu-link p{
+    width: 100%;
+    font-size: 0.9em;
+    margin-left: 15px;
+    transition: font-weight 0.1s;
+}
+.sub-menu-link .fa-arrow-right{
+    font-size: 20px;
+    font-size: .7em;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover .fa-arrow-right {
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: bold;
+}
 .nav-menu a{
     padding: 8px;
     line-height: 2em;
 }
+
 .btn{
     display: inline-block;
     background-color: var(--corDestaque1);
@@ -67,11 +142,6 @@ header{
     margin-left: 2em;
 }
 
-.user-logado{
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-}
 /* Content Start*/
 main{
     flex: 1;
@@ -249,7 +319,7 @@ footer img{
     padding: 10px 20px;
     background-color: var(--corSecundaria2);
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,11 +404,9 @@ footer img{
     font-size: 18px;
     color: var(--corPrimaria);
 }
-.form-search .form-group button img{
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    filter: invert(1);
+.form-search .form-group button .fa-magnifying-glass{
+    color: inherit;
+    margin-right: 15px;
 }
 /* Segundo container */
 
@@ -402,7 +470,7 @@ footer img{
     justify-content: center;
 }
 
-.item  img{
+.item .icon{
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -427,11 +495,11 @@ font-family: inherit;
 font-weight: 600;
 }
 
-.text--1 {
+.text--1, .item--1 .icon {
 color: var(--corSecundaria2);
 }
 
-.text--2 {
+.text--2, .item--2 .icon {
 color: var(--corSecundaria1);
 }
 

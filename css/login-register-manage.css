@@ -60,12 +60,6 @@ main h1{
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   }
-  .invalid input{
-    border: 3px solid red;
-  }
-  .valid input{
-    border: 2px solid green;
-  }
   .forgot {
     display: flex;
     justify-content: flex-end;
@@ -218,7 +212,7 @@ form .button input{
   border: none;
   border-radius: 7px;
   align-self: flex-end;
-  background-color: var(--corDestaque1);
+  background-color: rgb(55, 211, 55);
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -226,10 +220,11 @@ form .button input{
 .create-btn .fa-circle-plus{
   margin-right: 6px;
 }
-.flex-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.create-btn.edit{
+  background-color: var(--corDestaque1);
+}
+.create-btn.delete{
+  background-color: rgb(222, 68, 68);
 }
 
 .divTable {
@@ -373,11 +368,14 @@ tbody tr {
 }
 .img-settings .pic .profile-pic{
   display: block;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 10px 0;
   background-color: #e0e0e0;
   border-radius: 50%;
   border: 14px solid #ccc;
+  overflow: hidden;
+  color: #3e3e3e;
 }
 .pic button{
   cursor: pointer;
@@ -386,8 +384,10 @@ tbody tr {
   padding: 4px;
   border-radius: 5px;
   outline: none;
+  border: 0;
   display: inline-flex;
   align-self: center;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
 
 }
 .img-settings .setting{

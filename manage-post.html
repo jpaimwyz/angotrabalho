@@ -17,13 +17,44 @@
             <img src="img/AngoTrabalho.png" alt="logo">
         </a>
         </div>
-        <img src="img/do-utilizador.svg" alt="" class="user-logado">
+        <nav class="profile">
+            <img src="img/user.png" alt="user-pic" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/user.png">
+                        <h4>Nome do Usuário</h2>
+                    </div>
+                    <hr>
+                    <a href="profile-EM.html" class="sub-menu-link">
+                        <i class="fa-solid fa-user icon"></i>
+                        <p>Edit Profile</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-gear icon"></i>
+                        <p>Settings & Privacy</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-info icon"></i>
+                        <p>Help & Support</p>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                        <p>Logout</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container-manage">
             <div class="title">
                 <h3>Gestão de Vagas</h3>
-                <a class="create-btn flex-btn" href="create-post.html"><i class="fa-solid fa-circle-plus"></i>Criar Nova Vaga</a>
+                <a class="create-btn" href="create-post.html"><i class="fa-solid fa-circle-plus"></i>Criar Nova Vaga</a>
             </div>
             <div class="divTable">
                 <table>
@@ -44,8 +75,8 @@
                         <td>Desenvolvimento de Software</td>
                         <td>Dev Júnior Web</td>
                         <td class="acao">
-                            <button class="create-btn" style="background-color: #388659;">Editar</button>
-                            <button class="create-btn" style="background-color: #388659;">Excluir</button>
+                            <button class="create-btn edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="create-btn delete"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     <tbody>
                         <td>02</td>
@@ -54,8 +85,8 @@
                         <td>Desenvolvimento de Software</td>
                         <td>Gestor de Projetos</td>
                         <td class="acao">
-                            <button class="create-btn" style="background-color: #388659;">Editar</button>
-                            <button class="create-btn" style="background-color: #388659;">Excluir</button>
+                            <button class="create-btn edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="create-btn delete"><i class="fa-solid fa-trash"></i></button>
                         </td>
     
                     </tbody>
@@ -105,6 +136,7 @@
             </article>
         </section>
     </footer>
+    <script src="js/script.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>
 </body>

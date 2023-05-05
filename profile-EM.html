@@ -16,14 +16,45 @@
         <a href="index.html" class="logo">
             <img src="img/AngoTrabalho.png" alt="logo">
         </a>
-        <img src="img/do-utilizador.svg" alt="" class="user-logado">
+        <nav class="profile">
+            <img src="img/user.png" alt="user-pic" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/user.png">
+                        <h4>Nome do Usuário</h2>
+                    </div>
+                    <hr>
+                    <a href="profile-EM.html" class="sub-menu-link">
+                        <i class="fa-solid fa-user icon"></i>
+                        <p>Edit Profile</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-gear icon"></i>
+                        <p>Settings & Privacy</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-info icon"></i>
+                        <p>Help & Support</p>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                        <p>Logout</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="profile-container">
             <div class="img-settings">
                 <p class="description">Dados</p>
                 <div class="pic">
-                    <img src="img/do-utilizador.svg" alt="" class="profile-pic">
+                    <i class="fa-solid fa-user profile-pic"></i>
                     <button>Upload new File</button>
                 </div>
                 <div class="setting">
@@ -111,6 +142,7 @@
             </article>
         </section>
     </footer>
+    <script src="js/script.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>
 </body>

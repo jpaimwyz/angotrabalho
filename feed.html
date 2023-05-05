@@ -17,7 +17,38 @@
         <a href="index.html" class="logo">
             <img src="img/AngoTrabalho.png" alt="logo">
         </a>
-        <img src="img/do-utilizador.svg" alt="" class="user-logado">
+        <nav class="profile">
+            <img src="img/user.png" alt="user-pic" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/user.png">
+                        <h4>Nome do Usuário</h2>
+                    </div>
+                    <hr>
+                    <a href="profile-CA.html" class="sub-menu-link">
+                        <i class="fa-solid fa-user icon"></i>
+                        <p>Edit Profile</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-gear icon"></i>
+                        <p>Settings & Privacy</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-info icon"></i>
+                        <p>Help & Support</p>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                        <p>Logout</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -56,8 +87,8 @@
                 <article class="job-card">
                     <h2><a href="#">Procura-se Programador Júnior</a></h2>
                     <h4>Dev & CO.</h4>
-                    <span class="job-details"><img src="img/relogio.svg" alt=""> Tempo Inteiro</span>
-                    <span class="job-details"><img src="img/marcador.svg" alt=""> Luanda</span>
+                    <span class="job-details"><i class="fa-solid fa-clock"></i> Tempo Inteiro</span>
+                    <span class="job-details"><i class="fa-solid fa-location-dot"></i> Luanda</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum, libero nam quasi veritatis aperiam tempora odio dolorum atque architecto fuga excepturi sunt sapiente incidunt optio consectetur ea qui deleniti!
                     </p>
                 
@@ -66,8 +97,8 @@
                 <article class="job-card">
                     <h2><a href="#">Procura-se Gestor de projetos</a></h2>
                     <h4>RH, SA</h4>
-                     <span class="job-details"><img src="img/relogio.svg" alt=""> Tempo Inteiro</span>
-                    <span class="job-details"><img src="img/marcador.svg" alt=""> Luanda</span>
+                     <span class="job-details"><i class="fa-solid fa-clock"></i> Tempo Inteiro</span>
+                    <span class="job-details"><i class="fa-solid fa-location-dot"></i> Luanda</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum, libero nam quasi veritatis aperiam tempora odio dolorum atque architecto fuga excepturi sunt sapiente incidunt optio consectetur ea qui deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quos similique deleniti consequatur amet quis ipsa optio odio, nemo unde non ducimus officiis pariatur, quidem provident placeat impedit quo. Sint!
                     </p>
                    
@@ -119,6 +150,7 @@
             </article>
         </section>
     </footer>
+    <script src="js/script.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>
 </body>
