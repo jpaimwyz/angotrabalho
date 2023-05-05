@@ -22,19 +22,19 @@
         <div class="container-register">
             <p class="message">É uma Empresa/Empregador? <a href="register-EM.html">Cadastre-se aqui</a> </p>
             <form action="#" id="form" name="form">
-                <div class="input-box">
+                <div class="input-group">
                     <label for="">Nome Completo<span class="obrigatorio">*</span></label>
                     <input type="text" placeholder="Insira o nome completo" required>
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="">Email<span class="obrigatorio">*</span></label>
                     <input type="email" placeholder="Insira o email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="">Telefone<span class="obrigatorio">*</span></label>
                     <input type="number" placeholder="Insira o número de telefone" required min="0" max="999999999">
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="nacionalidade">Nacionalidade<span class="obrigatorio">*</span></label>
                     <select name="nacionalidade" id="nacionalidade" size="1" >
                         <option value="Selecione a nacionalidade">Selecione a Nacionalidade</option>
@@ -44,20 +44,21 @@
                         <option value="">4</option>
                     </select>
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="datanascimento">Data de Nascimento<span class="obrigatorio">*</span></label>
                     <input type="date" id="datanascimento" name="datanascimento">
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="">Criar uma senha<span class="obrigatorio">*</span></label>
                     <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     placeholder="Digite a senha"
                     title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
+                    <i class="fa-solid fa-eye-slash .show-hide"></i>
                 </div>
-                <div class="input-box">
+                <div class="input-group">
                     <label for="">Confirmar Senha<span class="obrigatorio">*</span></label>
                     <input type="password" placeholder="Repita a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres"  required>
+                    title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
                 </div>
 
                 <span class="message">Ao criar conta, concorda com os nossos <a href="#">Termos e Condições</a></span>
@@ -76,9 +77,9 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam veritatis eos assumenda, quidem perspiciatis deserunt voluptatibus exercitationem obcaecati et sint alias laboriosam vel illo quia suscipit eaque, delectus nihil consequuntur?</p>
                 <hr>
                 <nav class="social">
-                    <a href="" ><img src="img/facebook.svg" alt="Imagem do facebook" title="Visite nossa página"></a>
-                    <a href=""><img src="img/twitter.svg" alt="Imagem do Twitter" title="Visite nossa página"></a>
-                    <a href=""><img src="img/discord.svg" alt="Imagem do Discord" title="Visite nossa comunidade"></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
                 </nav>
                 <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
