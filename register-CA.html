@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body> 
+    <!-- --------------HEADER--------------- -->
     <header>
         <a href="index.html" class="logo">
             <img src="img/AngoTrabalho.png" alt="logo">
@@ -20,46 +21,40 @@
     <main>
         <h1> Cadastre-se agora e tenha acesso <br> às melhores vagas do mercado.</h1>
         <div class="container-register">
-            <p class="message">É uma Empresa/Empregador? <a href="register-EM.html">Cadastre-se aqui</a> </p>
-            <form action="#" id="form" name="form">
+            <p class="message">É uma Empresa/Empregador? <a href="register-EM.html">Cadastre-se aqui</a></p>
+            <!-- FORMULÁRIO------------------ -->
+            <form action="" id="form" name="form" method="POST">
                 <div class="input-group">
-                    <label for="">Nome Completo<span class="obrigatorio">*</span></label>
-                    <input type="text" placeholder="Insira o nome completo" pattern="" required>
+                    <label for="nome">Nome Completo<span class="obrigatorio">*</span></label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome completo" pattern="" required>
                 </div>
                 <div class="input-group">
-                    <label for="">Email<span class="obrigatorio">*</span></label>
-                    <input type="email" placeholder="Insira o email" required> <!--  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ -->
+                    <label for="email">Email<span class="obrigatorio">*</span></label>
+                    <input type="email" name="email"    id="email" placeholder="Insira o email" required> 
                 </div>
-                <div class="input-group">
-                    <label for="">Telefone<span class="obrigatorio">*</span></label>
-                    <input type="number" placeholder="Insira o número de telefone" required min="0" max="999999999">
-                </div>
+               <!--  <div class="input-group">
+                    <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
+                    <input type="number" placeholder="Insira o número de telefone" name="telefone" id="telefone" required>
+                </div> -->
                 <div class="input-group">
                     <label for="nacionalidade">Nacionalidade<span class="obrigatorio">*</span></label>
-                    <select name="nacionalidade" id="nacionalidade" size="1" >
-                        <option value="Selecione a nacionalidade">Selecione a Nacionalidade</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
+                    <select name="nacionalidade" id="nacionalidade" size="1">
+                        <option value="#" aria-disabled="true">Selecione a Nacionalidade</option>
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="datanascimento">Data de Nascimento<span class="obrigatorio">*</span></label>
+                    <label for="datanascimento">Data de Nascimento</label>
                     <input type="date" id="datanascimento" name="datanascimento">
                 </div>
                 <div class="input-group">
-                    <label for="">Criar uma senha<span class="obrigatorio">*</span></label>
-                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    placeholder="Digite a senha"
-                    title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
+                    <label for="senha">Criar uma senha<span class="obrigatorio">*</span></label>
+                    <input type="password" name="senha"
+                    placeholder="Digite a senha" required>
                 </div>
                 <div class="input-group">
-                    <label for="">Confirmar Senha<span class="obrigatorio">*</span></label>
-                    <input type="password" placeholder="Repita a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required>
+                    <label for="csenha">Confirmar Senha<span class="obrigatorio">*</span></label>
+                    <input type="password" name="csenha" placeholder="Digite a senha novamente"  required>
                 </div>
-
                 <span class="message">Ao criar conta, concorda com os nossos <a href="#">Termos e Condições</a></span>
                 <div class="button">
                 <input type="submit" value="Cadastrar">
@@ -68,7 +63,7 @@
             </form>
         </div>
     </main>
-
+            <!-- ------------------FOOTER-------------- -->
     <footer>
         <section class="footer-container">
             <article class="footer-row copyright">

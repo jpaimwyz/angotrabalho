@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="css/login-register-manage.css">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="css/all.min.css">
-</head>
+</head> 
 <body>
-    <!-- ----------------CABEÇALHO-------------- -->
+    <!-- ----------------CABEÇALHO------------------ -->
     <header>
         <a href="index.html" class="logo">
             <img src="img/AngoTrabalho.png" alt="logo">
         </a>
-        </div>
-        <!-- -----------PERFIL TOGGLE----------- -->
+        <!-- PERFIL---------------------------- -->
         <nav class="profile">
             <img src="img/user.png" alt="user-pic" class="user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id="subMenu">
@@ -52,36 +51,51 @@
             </div>
         </nav>
     </header>
-    <!-- ----------CONTÉUDO PRINCIPAL----------------- -->
     <main>
-        <div class="container-manage">
-            <div class="title">
-                <h3>Gestão de Vagas</h3>
-                <a class="create-btn" href="create-post.html"><i class="fa-solid fa-circle-plus"></i>Criar Nova Vaga</a>
+        <!-- CONTAINER ------------- -->
+        <div class="container">
+            <div class="profile-main">
+                <div class="profile-container2">
+                    <div class="profile-container-inner">
+                        <img src="img/user.png" class="profile-pic">
+                        <h1>Nome of the user</h1>
+                        <strong>Some info about where se works and stuff.</strong>
+                        <p>The location, if setted &middot; <a href="">Some contact info</a></p>
+                    </div>
+                </div>
+                <div class="profile-description">
+                    <h2>About</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates voluptatem harum hic assumenda autem deleniti commodi optio molestias vitae similique nobis error distinctio, dicta aliquam. Excepturi autem accusamus reiciendis velit.</p>
+                    <a href="#" class="see-more-link">See more...</a>
+                </div>
+                <div class="profile-description">
+                    <h2>Vagas mais populares</h2>
+                    <div class="profile-desc-row">
+                    <h3>Job Role</h3>
+                    <strong>Info about the companny</strong>
+                    <strong>2012 - Present &middot; 1.4 years</strong>
+                    <p>Desc Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, a sed id, deserunt aspernatur quisquam aliquam perspiciatis corporis ab velit quod unde soluta in molestias eligendi accusamus vero reiciendis libero.</p>
+                        <!-- <hr> -->
+                    </div>
+                    <hr>
+                    <a href="#" class="experience-link">Show all 7 experiences <i></i></a>
+                </div>
+                <div class="profile-description">
+                    <h2>Gerenciamento de Vagas</h2>
+                    <div class="profile-desc-row">
+                        <div>
+                            <h3>Nome da school</h3>
+                            <strong>Info about the course made</strong> 
+                            <strong>2012 - Present &middot; 1.4 years Time Tuition</strong>
+                            <p>Desc Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, a sed id, deserunt aspernatur quisquam aliquam perspiciatis corporis ab velit quod unde soluta in molestias eligendi accusamus vero reiciendis libero.</p>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="divTable">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="vaga">N/O</th>
-                            <th>Título</th>
-                            <th>Área</th>
-                            <th>Local</th>
-                            <th class="acao">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <td>01</td>
-                        <td>Programador Júnior</td>
-                        <td>Contrata-se um programador júnior...</td>
-                        <td>Desenvolvimento de Software</td>
-                        <td class='acao'>
-                            <button class='create-btn edit' name='deletar'><i class='fa-solid fa-pen'></i></button>
-                            <button class='create-btn delete' name='editar'><i class='fa-solid fa-trash'></i></button>
-                        </td>
-                </table>
-            </div>
+        </div>
     </main>
+    <!-- ----------------RODAPÉ---------------- -->
     <footer>
         <section class="footer-container">
             <article class="footer-row copyright">
