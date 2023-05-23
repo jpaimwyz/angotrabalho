@@ -1,28 +1,26 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,800&family=Roboto+Mono:ital,wght@0,200;0,300;1,400&display=swap');
 
+
 main{
-    padding: 4em 0 7em 0;
+    flex: 1;
     min-height: 80vh;
     background-color: var(--corPrimaria);
 }
 /* FEED CONTAINER */
 .feed-container{
-   /*  background-color: tomato; */
-    margin: 0 15px;
-    padding: 10px;
+    padding: 7em 2em;
     display: grid;
     grid-template-columns: 2fr 6fr;
+    column-gap: 4em;
     height: auto;
     
 }
-
 .user-logado{
     width: 30px;
     height: 30px;
     filter: invert(1);
 }
-
 .filtering{
     background-color: #fff;
     display: flex;
@@ -127,59 +125,113 @@ main{
     height: 10px;
 
 }
-
-/* Paginação */
-/* .container,
-.button,
-.links,
-.link {
+/* Admin */
+.admin-container{
+  display: flex;
+  justify-content: stretch;
+}
+/* SIDE NAVBAR */
+.sidebar-container .sidebar {
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.container {
-  padding: 20px;
+  margin: 8px 0;
+  padding: 14px 12px;
   border-radius: 8px;
-  column-gap: 12px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.button {
-  border: none;
-}
-.button i {
-  pointer-events: none;
-}
-.button:disabled {
-  color: #b3b3b3;
-  pointer-events: none;
-}
-.button,
-.link {
-  height: 45px;
-  width: 45px;
-  font-size: 20px;
-  color: #666666;
-  background-color: #f2f2f2;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.links {
-  column-gap: 12px;
-}
-.link {
-  font-weight: 500;
   text-decoration: none;
 }
-.button:hover,
-.link:hover {
-  color: #fff;
-  background: #4070f4;
+.lists .nav-link:hover {
+  background-color: #4070f4;
 }
-.link.active {
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
   color: #fff;
-  background: #4070f4;
-} */
-
-/* Admin */
-/*  import google fonts */
+}
+/*Attendance List section  */
+.charts{
+  padding: 4em 0 7em 4em;
+}
+.attendance{
+  margin-top: 20px;
+  margin-bottom: 4em;
+  width: 70vw;
+  text-transform: capitalize;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}

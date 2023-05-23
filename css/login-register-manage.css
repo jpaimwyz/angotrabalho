@@ -50,8 +50,18 @@ main h1{
     color: var(--corTexto);
     margin-bottom: 4px;
   }
-  .input-group input, .input-group select {
-  height: 45px;
+  /* .input-group input, .input-group select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+  } */
+  .attbr{
+    height: 45px;
   width: 100%;
   outline: none;
   font-size: 16px;
@@ -60,6 +70,7 @@ main h1{
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   }
+  
   .forgot {
     display: flex;
     justify-content: flex-end;
@@ -191,7 +202,23 @@ form .button input{
 .single{
   width: 700px;
 }
-
+.input-group .input-senha{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-senha.attbr input{
+  outline:  none;
+  border: none;
+  font-size: inherit;
+  width: 90%;
+}
+.senha-icon{
+  margin-right: 15px;
+  font-size: 20px;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+}
  /* ---------------------------MANAGE  POST--------------------------- */ 
 .container-manage{
   justify-self: flex-start;

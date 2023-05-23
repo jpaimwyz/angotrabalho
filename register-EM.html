@@ -22,42 +22,49 @@
         <h1> Cadastre-se agora e tenha acesso <br> aos melhores candidatos.</h1>
         <div class="container-register">
             <p class="message">É um Candidato? <a href="register-CA.html">Cadastre-se aqui</a></p>
-            <form action="#" id="form" name="form" method="POST">
+            <!-- FORMULÁRIO------------------------------------------------------------ -->
+            <form action="" id="form" name="form" method="POST">
                     <div class="input-group">
                         <label for="nome-empresa">Nome da Empresa<span class="obrigatorio">*</span></label>
-                        <input type="text" placeholder="Insira o nome da empresa" required autocomplete="on" id="nome-empresa" name="nome-empresa">
+                        <input type="text" placeholder="Insira o nome da empresa" required autocomplete="on" id="nome-empresa" name="nome-empresa" class="attbr">
                         <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <label for="email-empresa">Email<span class="obrigatorio">*</span></label>
-                        <input type="email" placeholder="Insira o email da empresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" id="email-empresa" name="email-empresa">
+                        <input type="email" placeholder="Insira o email da empresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" id="email-empresa" name="email-empresa" class="attbr">
                         <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <div class="single-container">
                             <div class="single">
                                 <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
-                                <input type="number" placeholder="Insira o número de telefone" required  id="telefone" name="telefone">
+                                <input type="number" placeholder="Insira o número de telefone" required  id="telefone" name="telefone" class="attbr">
                                 <span class="msg-text"></span>
                             </div>
                             <div class="single">
                                 <label for="nif">NIF<span class="obrigatorio">*</span></label>
-                                <input type="number" placeholder="Insira o NIF da Empresa" required id="nif" name="nif">
+                                <input type="number" placeholder="Insira o NIF da Empresa" required id="nif" name="nif" class="attbr">
                                 <span class="msg-text"></span>
                             </div>
                         </div>
                     </div>
                     <div class="input-group">
                         <label for="senha">Criar uma senha <span class="obrigatorio">*</span></label>
-                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        placeholder="Digite a senha"
-                        title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha" name="senha">
+                        <div class="input-senha attbr">
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            placeholder="Digite a senha"
+                            title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha" name="senha" class="senha">
+                            <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                        </div>
                         <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <label for="senha2">Confirmar Senha <span class="obrigatorio">*</span></label>
-                        <input type="password" placeholder="Repita a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha2" name="senha2">
+                        <div class="input-senha attbr">
+                            <input type="password" placeholder="Digite a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha2" name="senha2" class="senha">
+                            <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                        </div>
                         <span class="msg-text"></span>
                     </div>
                 <span class="message">Ao criar conta, concorda com os nossos <a href="#">Termos e Condições</a></span>
