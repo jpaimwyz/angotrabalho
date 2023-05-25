@@ -27,7 +27,6 @@ main h1{
     color: var(--corTexto);
     box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.303);
   }
-  
   .title-login {
     text-align: center;
     font-size: 2em;
@@ -44,24 +43,13 @@ main h1{
     line-height: 1.25rem;
     margin-bottom: 0.70em;
   }
-  
   .input-group label {
     display: block;
     color: var(--corTexto);
     margin-bottom: 4px;
   }
-  /* .input-group input, .input-group select {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-  } */
   .attbr{
-    height: 45px;
+  height: 45px;
   width: 100%;
   outline: none;
   font-size: 16px;
@@ -79,7 +67,6 @@ main h1{
     color: var(--corTexto);
     margin: 8px 0 14px 0;
   }
-  
   .forgot a{
     color: inherit;
     font-size: 14px;
@@ -94,7 +81,6 @@ main h1{
   .forgot a:hover, .signup a:hover {
     text-decoration: underline #323232d4;
   }
-  
   .sign {
     display: block;
     width: 100%;
@@ -107,19 +93,16 @@ main h1{
     font-weight: 600;
     cursor: pointer;
   }
-  
   .social-message {
     display: flex;
     align-items: center;
     padding-top: 1rem;
   }
-  
   .line {
     height: 1px;
     flex: 1 1 0%;
     background-color: var(--corDestaque1);
   }
-  
   .social-message .message {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -212,13 +195,15 @@ form .button input{
   border: none;
   font-size: inherit;
   width: 90%;
+  height: 25px;
 }
 .senha-icon{
   margin-right: 15px;
-  font-size: 20px;
+  font-size: inherit;
   padding: 10px 0 10px 10px;
   cursor: pointer;
 }
+
  /* ---------------------------MANAGE  POST--------------------------- */ 
 .container-manage{
   justify-self: flex-start;
@@ -238,7 +223,6 @@ form .button input{
   font-size: 1.8em;
 
 }
-
 .create-btn{
   padding: 10px;
   outline: none;
@@ -259,7 +243,6 @@ form .button input{
 .create-btn.delete{
   background-color: rgb(222, 68, 68);
 }
-
 .divTable {
   padding: 10px;
   margin: 0 10px;
@@ -313,7 +296,6 @@ tbody tr {
   margin-bottom: 50px;
 }
 
-
 /* -------------------------CREATE POST------------------------- */
 .container-post{
   width: 80vw;
@@ -338,7 +320,7 @@ tbody tr {
   font-size: 18px;
   padding: 10px;
   align-self: flex-start;
-  width: 100px;
+  width: 120px;
   margin-right: 20px;
   font-weight: 500;
 }
@@ -385,89 +367,116 @@ tbody tr {
 }
 
 /* ---------------------Profiles Management----------------------------------- */
-.description{
-  font-size: 1.2em;
+.sidebar-container .sidebar {
+  height: auto;
+  width: 300px;
+  padding: 20px 0;
+  background-color: #fff;
+  margin-left: 30px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.dash-profile{
+  margin: 8px 0;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.dash-profile h4{
+  font-size: 20px;
+  margin-top: 6px;
   font-weight: 600;
-  align-self: flex-start;
+}
+.dash-profile img{
+  width: 70px;
+  height: auto;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: var(--corSecundaria1);
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: var(--corTexto);
+}
+.nav-link .link {
+  font-size: 16px;
+  color: var(--corTexto);
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
 }
 .profile-container{
   display: flex;
-  justify-content: space-around;
-  padding: 20px; 
+  justify-content: stretch;
   width: 100%;
 }
-.profile-container .line-{
-  border-right: 1px solid #ccc;
-}
-.img-settings{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 400px;
-  align-items: center;
-  background-color: #fff;
-  padding: 2em;
-}
-.img-settings .pic .profile-pic{
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 10px 0;
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  border: 14px solid #ccc;
-  overflow: hidden;
-  color: #3e3e3e;
-}
-.pic button{
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  padding: 4px;
-  border-radius: 5px;
-  outline: none;
-  border: 0;
-  display: inline-flex;
-  align-self: center;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-
-}
-.img-settings .setting{
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.setting button, .input-group.profile-g button{
-  width: 100%;
-  margin-bottom: 2px;
-  cursor: pointer;
-  padding: 7px;
-  outline: none;
-  border: 0;
+.main-profile{
   border-radius: 4px;
-  font-size: 14px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-basis: 70%;
+  min-height: 70vh;
+  margin-left: 20px;
+  justify-self: center;
+}
+.mp-row{
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-.setting button:last-child{
-  border: none;
+.mp-row .secao{
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
 }
-.profile-container .info-details{
-  display: flex;
-  width: 800px;
-  flex-direction: column;
-  padding: 10px;
+.attbr.textarea{
+  padding-top: 10px;
+  min-height: 180px;
 }
-.input-group.profile-g button {
-  width: 120px;
-  cursor: pointer;
-  padding: 10px;
+.save{
   outline: none;
   border: 0;
-  font-size: 16px;
+  padding: 10px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.303);
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--corSecundaria1);
+  color: var(--corPrimaria);
+  cursor: pointer;
   border-radius: 5px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.418);
 }
+.save:hover{
+  background-color: var(--sombraSecundaria1);
+}
+.save.warning{
+  background-color: rgba(177, 21, 21, 0.938);
+  border-radius: 0;
+  margin-top: 5px;
+}
+
 /* ----------------------PERFIL DE NOVO------------------------------------ */
 .container{
   padding: 20px 6%;
@@ -479,14 +488,14 @@ tbody tr {
 .profile-main{
   flex-basis: 100%;
   align-self: center;
-  
 }
 .profile-container2{
-  background: #ccc;
+  background: #fff;
 }
 .profile-container-inner{
   padding: 0 4% 10px;
   height: auto;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.303);
 }
 .profile-pic{
   height: 150px;
@@ -495,12 +504,12 @@ tbody tr {
   border-radius: 50%;
   margin-top: -75px;
   padding: 5px;
-  background-color: #ccc;
+  background-color: #fff;
 }
 .profile-container2 h1{
   font-size: 28px;
   font-weight: 600;
-  color: #222; 
+  color: var(--corTexto); 
   margin-bottom: 10px;
   text-align: start;
 }
@@ -515,12 +524,13 @@ tbody tr {
   font-weight: 600;
 }
 .profile-description{
-  background: #ccc;
+  background: #fff;
   padding: 20px 4% 30px;
   margin: 12px 0;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.303);
 }
 .profile-description h2{
-  color: #333;
+  color: var(--corTexto);
   margin: 10px 0 20px;
   font-weight: 600;
 }
@@ -528,7 +538,6 @@ tbody tr {
   margin-bottom: 20px;
   line-height: 25px;
 }
-
 .see-more-link{
   display: block;
   text-align: right;
@@ -542,14 +551,13 @@ tbody tr {
   align-items: flex-start;
   margin: 20px 0;
 }
-
 .profile-desc-row div{     
   width: 100%;
 }
 .profile-desc-row h3{
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: var(--corTexto);
 }
 .profile-desc-row strong{
   display: block;
@@ -561,7 +569,7 @@ tbody tr {
 }
 .profile-desc-row hr{
   border: 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #eee;
 }
 .experience-link{
   display: flex;
@@ -576,11 +584,11 @@ tbody tr {
 }
 .skills-btn{
   text-decoration: none;
-  color: #eee;
+  color: var(--corTexto);
   display: inline-block;
   margin: 10px 5px;
   padding: 6px 18px;
-  border: 1px solid #777;
+  border: 1px solid #aaa;
   border-radius: 30px;
 }
 .lang-btn{
@@ -588,8 +596,8 @@ tbody tr {
   display: inline-block;
   margin: 10px 5px;
   padding: 6px 18px;
-  background: #ddd;
+  background: #ccc;
   font-size: 12px;
   font-weight: 500;
-  color: #777;
+  color: var(--corTexto);
 }

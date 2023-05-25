@@ -23,14 +23,14 @@
         <div class="container-register">
             <p class="message">É uma Empresa/Empregador? <a href="register-EM.html">Cadastre-se aqui</a></p>
             <!-- FORMULÁRIO------------------ -->
-            <form action="" id="form" name="form" method="POST">
+            <form action="/" id="form" name="form" method="POST">
                 <div class="input-group">
                     <label for="nome">Nome Completo<span class="obrigatorio">*</span></label>
-                    <input type="text" name="nome" id="nome" placeholder="Insira o nome completo" pattern="" required>
+                    <input type="text" name="nome" id="nome" class="attbr" placeholder="Insira o nome completo" autocomplete="off" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email<span class="obrigatorio">*</span></label>
-                    <input type="email" name="email"    id="email" placeholder="Insira o email" required> 
+                    <input type="email" name="email" class="attbr" id="email" placeholder="seunome@email.com" required autocomplete="off"> 
                 </div>
                 <!--  <div class="input-group">
                     <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
@@ -38,22 +38,39 @@
                 </div> -->
                 <div class="input-group">
                     <label for="nacionalidade">Nacionalidade<span class="obrigatorio">*</span></label>
-                    <select name="nacionalidade" id="nacionalidade" size="1">
-                        <option value="#" aria-disabled="true">Selecione a Nacionalidade</option>
+                    <select name="nacionalidade" id="nacionalidade" size="1" class="attbr">
+                        <option value="#" disabled>Selecione a Nacionalidade</option>
+                        <option value="Bengo">Bengo</option>
+                        <option value="Benguela">Benguela</option>
+                        <option value="Bié">Bié</option>
+                        <option value="Cabinda">Cabinda</option>
+                        <option value="Cuando Cubango">Cuando Cubango</option>
+                        <option value="Cuanza Norte">Cuanza Norte</option>
+                        <option value="Cuanza Sul">Cuanza Sul</option>
+                        <option value="Cunene">Cunene</option>
+                        <option value="Huambo">Huambo</option>
+                        <option value="Huíla">Huíla</option>
+                        <option  value="Luanda">Luanda</option> <!-- selected="selected" -->
+                        <option value="Lunda Norte">Lunda Norte</option>
+                        <option value="Luanda Sul">Lunda Sul</option>
+                        <option value="Malange">Malange</option>
+                        <option value="Moxico">Moxico</option>
+                        <option value="Namibe">Namibe</option>
+                        <option value="Uíge">Uíge</option>
+                        <option value="Zaire">Zaire</option>
                     </select>
                 </div>
                 <div class="input-group">
                     <label for="datanascimento">Data de Nascimento</label>
-                    <input type="date" id="datanascimento" name="datanascimento">
+                    <input type="date" id="datanascimento" name="datanascimento" class="attbr">
                 </div>
                 <div class="input-group">
                     <label for="senha">Criar uma senha<span class="obrigatorio">*</span></label>
-                    <input type="password" name="senha"
-                    placeholder="Digite a senha" required>
+                    <input type="password" name="senha" class="attbr" placeholder="Digite a senha" required>
                 </div>
                 <div class="input-group">
                     <label for="csenha">Confirmar Senha<span class="obrigatorio">*</span></label>
-                    <input type="password" name="csenha" placeholder="Digite a senha novamente"  required>
+                    <input type="password" name="csenha" class="attbr" placeholder="Digite a senha novamente"  required>
                 </div>
                 <span class="message">Ao criar conta, concorda com os nossos <a href="#">Termos e Condições</a></span>
                 <div class="button">

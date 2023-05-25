@@ -175,14 +175,53 @@ main{
   color: #fff;
 }
 /*Attendance List section  */
+
 .charts{
   padding: 4em 0 7em 4em;
 }
 .attendance{
   margin-top: 20px;
   margin-bottom: 4em;
-  width: 70vw;
+  min-width: 70vw;
+  width: 100%;
   text-transform: capitalize;
+}
+.attendance:first-child{
+  margin-top: 0;
+}
+.attendance:last-child{
+  margin-bottom: 0;
+}
+.boxes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.boxes .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  width: calc(100% / 3 - 15px);
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.boxes .box .icon{
+  font-size: 35px;
+  color: var(--corTexto);
+}
+.boxes .box .text{
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--corTexto);
+}
+.boxes .box .number{
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--corTexto);
 }
 .attendance-list{
   width: 100%;

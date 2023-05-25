@@ -26,19 +26,19 @@
             <form action="" id="form" name="form" method="POST">
                     <div class="input-group">
                         <label for="nome-empresa">Nome da Empresa<span class="obrigatorio">*</span></label>
-                        <input type="text" placeholder="Insira o nome da empresa" required autocomplete="on" id="nome-empresa" name="nome-empresa" class="attbr">
+                        <input type="text" placeholder="Insira o nome da empresa" required autocomplete="off" id="nome-empresa" name="nome-empresa" class="attbr">
                         <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <label for="email-empresa">Email<span class="obrigatorio">*</span></label>
-                        <input type="email" placeholder="Insira o email da empresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" id="email-empresa" name="email-empresa" class="attbr">
+                        <input type="email" placeholder="nomedaempesa@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="off" id="email-empresa" name="email-empresa" class="attbr">
                         <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <div class="single-container">
                             <div class="single">
                                 <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
-                                <input type="number" placeholder="Insira o número de telefone" required  id="telefone" name="telefone" class="attbr">
+                                <input type="number" placeholder="912 345 678" required  id="telefone" name="telefone" class="attbr">
                                 <span class="msg-text"></span>
                             </div>
                             <div class="single">
@@ -51,7 +51,7 @@
                     <div class="input-group">
                         <label for="senha">Criar uma senha <span class="obrigatorio">*</span></label>
                         <div class="input-senha attbr">
-                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                             placeholder="Digite a senha"
                             title="Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha" name="senha" class="senha">
                             <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
@@ -61,8 +61,8 @@
                     <div class="input-group">
                         <label for="senha2">Confirmar Senha <span class="obrigatorio">*</span></label>
                         <div class="input-senha attbr">
-                            <input type="password" placeholder="Digite a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres" required id="senha2" name="senha2" class="senha">
+                            <input type="password" placeholder="Digite a senha novamente" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                            title=" Deve conter pelo menos um número, um letra maiúscula e minúscula, e pelo menos 6 ou mais caracteres" required id="senha2" name="senha2" class="senha">
                             <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
                         </div>
                         <span class="msg-text"></span>

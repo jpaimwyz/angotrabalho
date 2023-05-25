@@ -55,27 +55,63 @@
         <div class="feed-container">
             <aside class="filtering">
                 <h5>Filtragem</h5>
-                <label for="">O que deseja procurar?</label>
-                <input type="text" class="search" placeholder="Insira as palavras-chaves" required>
-                
+                <label for="pesquisarCargo">O que deseja procurar?</label>
+                <input type="text" class="search" placeholder="Insira as palavras-chaves" name="pesquisarCargo" id="pesquisarCargo" autocomplete="off">
                 <label for="">Onde?</label>
-                <select name="" id="" class="search sel" required>
-                    <option value="">Selecione a localização</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
+                <select name="pesquisarZona" id="pesquisarCargo" class="search sel">
+                    <option value="Todas">Todas</option>
+                    <option value="Bengo">Bengo</option>
+                    <option value="Benguela">Benguela</option>
+                    <option value="Bié">Bié</option>
+                    <option value="Cabinda">Cabinda</option>
+                    <option value="Cuando Cubango">Cuando Cubango</option>
+                    <option value="Cuanza Norte">Cuanza Norte</option>
+                    <option value="Cuanza Sul">Cuanza Sul</option>
+                    <option value="Cunene">Cunene</option>
+                    <option value="Huambo">Huambo</option>
+                    <option value="Huíla">Huíla</option>
+                    <option  value="Luanda">Luanda</option> <!-- selected="selected" -->
+                    <option value="Lunda Norte">Lunda Norte</option>
+                    <option value="Luanda Sul">Lunda Sul</option>
+                    <option value="Malange">Malange</option>
+                    <option value="Moxico">Moxico</option>
+                    <option value="Namibe">Namibe</option>
+                    <option value="Uíge">Uíge</option>
+                    <option value="Zaire">Zaire</option>
                 </select>
                 
-                <label for="">Área de atuacão</label>
-                <select name="" id="" class="search sel" required>
-                    <option value="">Selecione uma área</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
+                <label for="area-atuacao">Área de atuacão</label>
+                <select name="area-atuacao" id="area-atuacao" class="search sel">
+                    <option disabled see>Selecione uma área</option>
+                    <option value="Administração e apoio de escritório">Administração e apoio de escritório</option>
+                    <option value="Beleza, fitness e desporto">Beleza, fitness e desporto</option>
+                    <option value="Finanças e contabilidade">Finanças e contabilidade</option>
+                    <option value="Consultoria, auditoria e estratégia empresa
+                    ">Consultoria, auditoria e estratégia empresarial</option>
+                    <option value="Compras, logística e comércio">Compras, logística e comércio</option>
+                    <option value="Ensino, formação e línguas">Ensino, formação e línguas</option>
+                    <option value="Engenharia">Engenharia</option>
+                    <option value="Gestão e executivo">Gestão e executivo</option>
+                    <option value="Informática e TI">Informática e TI</option>
+                    <option value="Imobiliário e construção">Imobiliário e construção</option>
+                    <option value="Jurídico">Jurídico</option>
+                    <option value="Marketing, comunicação e relações públicas">Marketing, comunicação e relações públicas</option>
+                    <option value="Moda e espectáculo">Moda e espectáculo</option>
+                    <option value="Pesquisa e Desenvolvimento">Pesquisa e Desenvolvimento</option>
+                    <option value="Petróleos – Técnico especializado">Petróleos – Técnico especializado</option>
+                    <option value="Banca, seguros">Banca, seguros</option>
+                    <option value="Actividade agrícola">Actividade agrícola</option>
+                    <option value="Ciências">Ciências</option>
+                    <option value="Indústria editorial">Indústria editorial</option>
+                    <option value="Vendas e atendimento ao cliente">Vendas e atendimento ao cliente</option>
+                    <option value="Profissionais, operários e ofícios">Profissionais, operários e ofícios</option>
+                    <option value="Qualidade, Higiene, Segurança e Ambiente">Qualidade, Higiene, Segurança e Ambiente</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                    <option value="Restauração, hotelaria e turismo">Restauração, hotelaria e turismo</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Aviação">Aviação</option>
+                    
                 </select>
-
                 <div class="btn-filtering">
                     <button class="btn-filter">Limpar</button>
                     <button class="btn-filter">Aplicar</button>
