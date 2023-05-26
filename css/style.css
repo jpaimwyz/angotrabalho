@@ -185,6 +185,7 @@ main{
 .info-content p{
     font-size: 0.98em;
     width: 490px;
+    font-weight: 500;
     margin-bottom: 15px;
     line-height: 1.3em;
 }
@@ -414,7 +415,6 @@ footer img{
     height: auto;
 }
 .row .row_content{
-    line-height: 3em;
     padding: 20px;
     width: 800px;
     height: auto;
@@ -423,12 +423,15 @@ footer img{
 }
 .row_content .row_title{
     font-size: 3em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     font-family: var(--fonteDestaque);
 }
-.row .row_content p{
+.row .row_content p, .row .row_content ul li {
     line-height: 1.6em;
+    margin-bottom: 20px;
+    text-align:  justify;
 }
+
 .row_content ul li .fa-circle-check{
     font-size: inherit;
     margin-right: 6px;

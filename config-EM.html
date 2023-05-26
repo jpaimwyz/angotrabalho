@@ -18,7 +18,7 @@
             <img src="img/AngoTrabalho.png" alt="logo">
         </a>
         <!-- PERFIL---------------------------- -->
-        <nav class="profile">
+        <!-- <nav class="profile">
             <img src="img/user.png" alt="user-pic" class="user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
@@ -49,57 +49,119 @@
                     </a>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <!-- CONTAINER LADO ESQUERDO -------------- -->
         <div class="profile-container">
-            <div class="img-settings">
-                <p class="description">Dados</p>
-                <div class="pic">
-                    <i class="fa-solid fa-user profile-pic"></i>
-                    <button>Upload new File</button>
+            <!-- NAVEGAÇÃO LATERAL -->
+            <nav class="sidebar-container">
+                <div class="sidebar">
+                    <div class="user-info dash-profile">
+                        <img src="img/user.png">
+                        <h4>Nome do Usuário</h2>
+                    </div>
+                    <div class="sidebar-content">
+                        <ul class="lists">
+                        <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="link">Início</span>
+                        </a>
+                        </li>
+                        <li class="list">
+                        <a href="profile-CA2.html" class="nav-link">
+                            <i class="fa-solid fa-user icon"></i>
+                            <span class="link">Perfil</span>
+                        </a>
+                        </li>
+                        <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-lock icon"></i>
+                            <span class="link">Palavra-Passe</span>
+                        </a>
+                        </li>
+                        <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-circle-info icon"></i>
+                            <span class="link">Ajuda e Suporte</span>
+                        </a>
+                        </li>
+                        <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-right-from-bracket icon"></i>
+                            <span class="link">Terminar Sessão</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                <div class="setting">
-                    <p class="description">Configurações</p>
-                    <button></button>
-                    <button>Valor 2</button>
-                    <button>Valor 3</button>
+                </nav>
+                <!-- Conteúdo Principal -->
+                <div class="main-profile">
+                    <div class="mp-row">
+                        <span class="secao">Informações Pessoais</span>
+                        <div class="input-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome" class="attbr" placeholder="Seu nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="attbr" placeholder="seuemail@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="attbr" placeholder="912 345 678">
+                        </div>
+                        <div class="input-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" class="attbr" placeholder="Sua localização">
+                        </div>
+                        <div class="input-group">
+                            <label for="sobre">Sobre</label>
+                            <textarea name="sobre" id="sobre" cols="30" rows="20" class="attbr textarea" placeholder="Escreva sobre você, seus interesses e o que quer partilhar com o mundo"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <button class="save">Salvar Alterações</button>
+                        </div>
+                    </div>
+                    <div class="mp-row">
+                        <span class="secao">Palavra-Passe</span>
+                        <div class="input-group">
+                            <label for="senhaAntiga">Palavra-Passe Antiga</label>
+                            <div class="input-senha attbr">
+                                <input type="password" placeholder="Digite a senha novamente" 
+                                id="senhaAntiga" name="senhaAntiga" class="senha">
+                                <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="senhaNova">Palavra-Passe Nova</label>
+                            <div class="input-senha attbr">
+                                <input type="password" placeholder="Digite a senha novamente" 
+                                id="senhaAntiga" name="senhaAntiga" class="senha">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="csenhaNova">Confirmar Palavra-Passe Nova</label>
+                            <div class="input-senha attbr">
+                                <input type="password" placeholder="Digite a senha novamente" 
+                                id="senhaAntiga" name="senhaAntiga" class="senha">
+                                <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <button class="save">Salvar Alterações</button>
+                        </div>
+                    </div>
+                    <div class="mp-row">
+                        <span class="secao">Deletar a Conta</span>
+                        <div class="input-group">
+                            <p>Ao eliminar sua conta, todos os seus dados serão perdidos permanentemente.</p>
+                            <button class="save warning">Deletar</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="line-"></div>
-            <!-- -----------CONTAINER PRINCIPAL-------------- -->
-            <div class="info-details">
-                <p class="description">Lorem</p>
-                <div class="input-group profile-g">
-                    <label for="">Lorem, ipsum dolor.</label>
-                    <input type="text" name="" id="" placeholder="Nome da Empresa">
-                </div>
-                <div class="input-group profile-g">
-                    <label for="">Lorem, ipsum dolor.</label>
-                    <input type="text" name="" id="" placeholder="Email da Empresa">
-                </div>
-                <div class="input-group profile-g">
-                    <label for="">Lorem, ipsum dolor.</label>
-                    <select name="" id="">
-                        <option value="">Todos</option>
-                        <option value="">Todos</option>
-                        <option value="">Todos</option>
-                        <option value="">Todos</option>
-                    </select>
-                </div>
-                <div class="input-group profile-g">
-                    <label for="">Lorem, ipsum dolor.</label>
-                    <input type="text" name="" id="" placeholder="Telefone">
-                </div>
-                <div class="input-group profile-g">
-                    <label for="">Lorem, ipsum dolor.</label>
-                    <input type="text" name="" id="" placeholder="NIF">
-                </div>
-                <div class="input-group profile-g">
-                    <button>Save</button>
-                </div>
-            </div>
         </div>
     </main>
     <!-- ----------------RODAPÉ---------------- -->

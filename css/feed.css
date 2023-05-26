@@ -158,24 +158,23 @@ main{
   text-decoration: none;
 }
 .lists .nav-link:hover {
-  background-color: #4070f4;
+  background-color: var(--corSecundaria2);
 }
 .nav-link .icon {
   margin-right: 14px;
   font-size: 20px;
-  color: #707070;
+  color: var(--corTexto);
 }
 .nav-link .link {
   font-size: 16px;
-  color: #707070;
-  font-weight: 400;
+  color: var(--corTexto);
+  font-weight: 500;
 }
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
   color: #fff;
 }
 /*Attendance List section  */
-
 .charts{
   padding: 4em 0 7em 4em;
 }
@@ -205,23 +204,27 @@ main{
   border-radius: 12px;
   width: calc(100% / 3 - 15px);
   padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--corSecundaria2);
   transition: all 0.5s ease;
 }
 .boxes .box .icon{
   font-size: 35px;
-  color: var(--corTexto);
+  color: var(--corPrimaria);
 }
 .boxes .box .text{
   white-space: nowrap;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--corTexto);
+  color: var(--corPrimaria);
 }
 .boxes .box .number{
   font-size: 40px;
   font-weight: 500;
-  color: var(--corTexto);
+  color: var(--corPrimaria);
+}
+.boxes .box.box3{
+  background-color: rgba(124, 49, 49, 0.999);
 }
 .attendance-list{
   width: 100%;
@@ -241,7 +244,7 @@ main{
 }
 table thead tr{
   color: #fff;
-  background: #34AF6D;
+  background: var(--corSecundaria2);
   text-align: left;
   font-weight: bold;
 }
@@ -257,20 +260,20 @@ table thead tr{
 }
 .table tbody tr.active{
   font-weight: bold;
-  color: #4AD489;
+  color: var(--corSecundaria2);
 }
 .table tbody tr:last-of-type{
-  border-bottom: 2px solid #4AD489;
+  border-bottom: 2px solid var(--corSecundaria2);
 }
 .table button{
   padding: 6px 20px;
   border-radius: 10px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #4AD489;
+  border: 1px solid var(--corSecundaria2);
 }
 .table button:hover{
-  background: #4AD489;
+  background: var(--corSecundaria2);
   color: #fff;
   transition: 0.5rem;
 }

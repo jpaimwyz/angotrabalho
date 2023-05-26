@@ -229,71 +229,60 @@ form .button input{
   border: none;
   border-radius: 7px;
   align-self: flex-end;
-  background-color: rgb(55, 211, 55);
-  color: #fff;
+  color: var(--corSecundaria1);
   font-weight: 600;
   cursor: pointer;
 }
 .create-btn .fa-circle-plus{
   margin-right: 6px;
 }
-.create-btn.edit{
+.create-btn.edit, .create-btn.delete{
   background-color: var(--corDestaque1);
+  color: var(--corPrimaria);
 }
-.create-btn.delete{
-  background-color: rgb(222, 68, 68);
-}
-.divTable {
+ .divTable {
   padding: 10px;
   margin: 0 10px;
   width: auto; 
   height: inherit; 
   overflow:auto;
 }
-.divTable::-webkit-scrollbar {
-  width: 12px;
-  background-color: whitesmoke; 
-}
-.divTable::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: darkgray; 
-}
-table {
-  width: 100%;
-  border-spacing: 10px;
-  word-break: break-all;
-  border-collapse: collapse;
-}
-thead {
-  background-color: inherit;
-}
-tbody tr td {
-  vertical-align: text-top;
-  padding: 6px;
-  max-width: 60px;
-  border-right: 1px solid #323232d4;
-  border-bottom: 1px solid #323232d4;
-}
-thead tr th {
-  padding: 5px;
-  text-align: start;
-  margin-bottom: 50px;
-  background-color: var(--corPrimaria);
-  border-right: 1px solid #32323260;
-  border-bottom: 1px solid #323232d4;
-}
 thead tr th.vaga{
-  width: 55px;
+  width: 100px;
 }
 thead tr th.acao{
   width: 110px;
 }
-
-thead tr th:last-child, tbody tr td:last-child{
-  border-right: none;
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
 }
-tbody tr {
-  margin-bottom: 50px;
+table thead tr{
+  color: #fff;
+  background: var(--corSecundaria1);
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: var(--corSecundaria1);
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid var(--corSecundaria1);
 }
 
 /* -------------------------CREATE POST------------------------- */
@@ -301,6 +290,7 @@ tbody tr {
   width: 80vw;
   background-color: #fff;
   padding:  2em;
+  border-radius: 4px;
 }
 .container-post .group-input{
   display: flex;
@@ -466,7 +456,7 @@ tbody tr {
   background-color: var(--corSecundaria1);
   color: var(--corPrimaria);
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .save:hover{
   background-color: var(--sombraSecundaria1);
@@ -474,7 +464,7 @@ tbody tr {
 .save.warning{
   background-color: rgba(177, 21, 21, 0.938);
   border-radius: 0;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 /* ----------------------PERFIL DE NOVO------------------------------------ */
