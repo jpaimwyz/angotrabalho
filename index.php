@@ -18,7 +18,7 @@
             </a>
         <nav class="nav-menu">
             <a href="index.php">Início</a>
-            <a href="index-candidatos.php">Candidatos</a>
+            <a href="404.php">Candidatos</a>
             <a href="404.php">Planos</a>
             <a href="login-page.php">Iniciar Sessão</a>
             <div class="btn"><a href="register-EM.php">Registar</a></div> 

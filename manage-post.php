@@ -62,7 +62,7 @@ $logado = $_SESSION['email'];
             <div class="title">
                 <h3>Gestão de Vagas</h3>
                 <a class="create-btn" href="create-post.php"><i class="fa-solid fa-circle-plus"></i>Criar Nova Vaga</a>
-                <button class="create-btn" onclick="javascript:history.go(-1)">Voltar</button>
+                <a href="profile-EM2.php" class="create-btn" >Voltar</a>
             </div>
             <div class="divTable">
                 <table class="table">

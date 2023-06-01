@@ -1,3 +1,9 @@
+<?php
+if(isset($_GET['buscar'])){
+    header('Location: 404.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,7 +68,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass icon"></i>Buscar</button>
+                        <button type="submit" name="buscar"><i class="fa-solid fa-magnifying-glass icon"></i>Buscar</button>
                     </div>
                 </form>
                 </article>
