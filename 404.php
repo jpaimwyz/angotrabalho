@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngoTrabalho | Seu portal de recrutamento e seleção</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head> 
+<body>
+    <main>
+        <div class="notFoundCont">
+            <div class="notFound">
+                <h1 class="title">Em Breve!</h1>
+                <p>Eita! Parece que essa página <br> ainda está a ser desevolvida...</p>
+                <span>"Dizem por aí que ela está aqui algures"</span>
+                <button class="back" onclick="javascript:history.go(-1)">Voltar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

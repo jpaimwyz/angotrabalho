@@ -224,21 +224,18 @@ form .button input{
 
 }
 .create-btn{
+  display: inline-block;
   padding: 10px;
   outline: none;
   border: none;
   border-radius: 7px;
-  align-self: flex-end;
-  color: var(--corSecundaria1);
+  background-color: var(--corDestaque1);
+  color: var(--corPrimaria);
   font-weight: 600;
   cursor: pointer;
 }
 .create-btn .fa-circle-plus{
   margin-right: 6px;
-}
-.create-btn.edit, .create-btn.delete{
-  background-color: var(--corDestaque1);
-  color: var(--corPrimaria);
 }
  .divTable {
   padding: 10px;
@@ -248,10 +245,7 @@ form .button input{
   overflow:auto;
 }
 thead tr th.vaga{
-  width: 100px;
-}
-thead tr th.acao{
-  width: 110px;
+  width: 120px;
 }
 .table{
   border-collapse: collapse;
@@ -474,6 +468,7 @@ table thead tr{
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 100px;
+  min-width: 90vw;
 }
 .profile-main{
   flex-basis: 100%;
@@ -591,3 +586,4 @@ table thead tr{
   font-weight: 500;
   color: var(--corTexto);
 }
+

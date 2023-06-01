@@ -68,7 +68,7 @@ header{
     position: absolute;
     top: 100%;
     right: 2%;
-    width: 320px;
+    width: 350px;
     max-height: 0px;
     overflow: hidden;
     transition:  max-height 0.5s;
@@ -87,7 +87,6 @@ header{
 }
 .user-info h4{
     font-weight: 400;
-    font-size: 1.2em;
 }
 .user-info img{
     width: 50px;
@@ -498,3 +497,49 @@ color: var(--corSecundaria2);
 color: var(--corSecundaria1);
 }
 
+
+/* 404 PAGE */
+.notFoundCont{
+    flex-direction: column;
+    width: inherit;
+    min-height: 100vh;
+    background-color: var(--corSecundaria1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notFoundCont .notFound{
+    font-size: 2em;
+    color: var(--corPrimaria);
+    text-align: center;
+    padding: 20px;
+}
+.notFound .title{
+    font-family:  var(--fonteDestaque);
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+}
+.notFound span{
+    display: block;
+    margin-top: 3px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .4em;
+}
+.notFound .back{
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    color: var(--corPrimaria);
+    font-family: var(--fonteDestaque);
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+
+}
+.notFound .back:hover{
+    text-decoration: underline solid var(--corPrimaria) 2px;
+} 
