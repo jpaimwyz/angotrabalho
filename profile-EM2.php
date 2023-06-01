@@ -72,8 +72,8 @@ $logado = $_SESSION['email'];
                 </div>
                 <div class="profile-description">
                     <h2>Sobre</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, qui ab ullam asperiores quos sunt magni perferendis? Odit eos sed animi pariatur sint soluta nihil qui architecto, quis quos. Beatae.</p>
-                    <a href="#" class="see-more-link">Veja mais...</a>
+                    <p>Em desenvolvimento...</p>
+                    <!-- <a href="#" class="see-more-link">Veja mais...</a> -->
                 </div>
                 <!-- <div class="profile-description">
                     <h2>Vagas mais populares</h2>
