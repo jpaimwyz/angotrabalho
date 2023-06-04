@@ -26,7 +26,7 @@
     <main>
         <h1> Cadastre-se agora e tenha acesso <br> aos melhores candidatos.</h1>
         <div class="container-register">
-            <p class="message">É um Candidato? <a href="register-CA.php">Cadastre-se aqui</a></p>
+            <p class="message">É um Candidato? <a href="404.php">Cadastre-se aqui</a></p>
             <!-- FORMULÁRIO------------------------------------------------------------ -->
             <form action="register-EM.php" id="form" name="form" method="POST">
                     <div class="input-group">
@@ -41,11 +41,11 @@
                     </div>
                     <div class="input-group">
                         <div class="single-container">
-                            <div class="single">
+                            <!-- <div class="single">
                                 <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
                                 <input type="number" placeholder="912 345 678" required  id="telefone" name="telefone" class="attbr">
                                 <span class="msg-text"></span>
-                            </div>
+                            </div> -->
                             <div class="single">
                                 <label for="nif">NIF<span class="obrigatorio">*</span></label>
                                 <input type="number" placeholder="Insira o NIF da Empresa" required id="nif" name="nif" class="attbr">

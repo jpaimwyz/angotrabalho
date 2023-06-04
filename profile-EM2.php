@@ -33,7 +33,7 @@ $logado = $_SESSION['email'];
                         <?php  echo "<h4>$logado</h4>"?>
                     </div>
                     <hr>
-                    <a href="config-EM.php?" class="sub-menu-link">
+                    <a href="404.php?" class="sub-menu-link">
                         <i class="fa-solid fa-user icon"></i>
                         <p>Editar Perfil</p>
                         <i class="fa-solid fa-arrow-right"></i>

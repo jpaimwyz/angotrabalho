@@ -35,7 +35,7 @@
                         <input type="password" name="senha" id="senha" class="attbr" placeholder="Insira a Palavra-passe" required>
                     </div>
                     <div class="forgot">
-                        <a rel="noopener noreferrer" href="#">Esqueceu a senha?</a>
+                        <a rel="noopener noreferrer" href="404.php">Esqueceu a senha?</a>
                     </div>
                     <button class="sign" rel="noopener noreferrer" type="submit" name="submit">Entrar</button>
                 </form>
@@ -57,7 +57,7 @@
                     </button>
                 </div>
                 <p class="signup">Não tem uma conta? Cadastre-se como 
-                    <a rel="noopener noreferrer" href="register-CA.php">Candidato</a> 
+                    <a rel="noopener noreferrer" href="404.php">Candidato</a> 
                     ou 
                     <a rel="noopener noreferrer" href="register-EM.php">Empresa/Empregador</a> 
                 </p>
