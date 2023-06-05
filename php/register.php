@@ -21,10 +21,10 @@ function insertEM(){
 
         $nome = $_POST['nome'];
         $email = $_POST['email'];
-        $telefone = $_POST['telefone'];
+        /* $telefone = $_POST['telefone']; */
         $nif = $_POST['nif'];
         $senha = $_POST['senha'];
-        $result = mysqli_query($mysqli, "INSERT INTO empregador(nome,email,telefone,senha,nif) VALUES ('$nome','$email','$telefone','$senha','$nif')");
+        $result = mysqli_query($mysqli, "INSERT INTO empregador(nome,email,senha,nif) VALUES ('$nome','$email','$senha','$nif')");
         header('Location: login-page.php');
     }
 }

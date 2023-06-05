@@ -32,7 +32,10 @@
                     </div>
                     <div class="input-group">
                         <label for="senha">Palavra-passe</label>
-                        <input type="password" name="senha" id="senha" class="attbr" placeholder="Insira a Palavra-passe" required>
+                        <div class="input-senha attbr">
+                            <input type="password" placeholder="Digite a senha" required id="senha" name="senha" class="senha">
+                            <i class="fa-solid fa-eye senha-icon" id="btn-senha" onclick="mostrarSenha()"></i>
+                        </div>
                     </div>
                     <div class="forgot">
                         <a rel="noopener noreferrer" href="404.php">Esqueceu a senha?</a>
@@ -68,6 +71,21 @@
     include_once 'php/pages/footer.php';
     ?>
     <!-- ---------------------JS----------------- -->
+    <script>
+        function mostrarSenha(){
+        let inputPass = document.getElementById('senha')
+        let btnShowPass = document.getElementById('btn-senha')
+
+        if(inputPass.type === 'password'){
+            inputPass.setAttribute('type', 'text')
+            btnShowPass.classList.replace('fa-eye', 'fa-eye-slash')
+        }
+        else{
+            inputPass.setAttribute('type', 'password')
+            btnShowPass.classList.replace('fa-eye-slash', 'fa-eye')
+        }
+}
+    </script>
     <script src="js/script.js"></script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>

@@ -32,42 +32,39 @@
                     <div class="input-group">
                         <label for="nome">Nome da Empresa<span class="obrigatorio">*</span></label>
                         <input type="text" placeholder="Insira o nome da empresa" required autocomplete="off" id="nome" name="nome" class="attbr">
-                        <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <label for="email">Email<span class="obrigatorio">*</span></label>
                         <input type="email" placeholder="nomedaempesa@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="off" id="email" name="email" class="attbr">
-                        <span class="msg-text"></span>
                     </div>
                     <div class="input-group">
                         <div class="single-container">
                             <!-- <div class="single">
                                 <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
                                 <input type="number" placeholder="912 345 678" required  id="telefone" name="telefone" class="attbr">
-                                <span class="msg-text"></span>
+    
                             </div> -->
                             <div class="single">
                                 <label for="nif">NIF<span class="obrigatorio">*</span></label>
                                 <input type="number" placeholder="Insira o NIF da Empresa" required id="nif" name="nif" class="attbr">
-                                <span class="msg-text"></span>
+    
                             </div>
                         </div>
                     </div>
                     <div class="input-group">
                         <label for="senha">Criar uma senha <span class="obrigatorio">*</span></label>
                         <div class="input-senha attbr">
-                            <input type="password" placeholder="Digite a senha" required id="senha" name="senha" class="senha">
-                            <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                            <input type="password" placeholder="Digite a senha" required id="senha" name="senha" class="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" title="A senha deve ter uma letra maiúscula e uma minúscula, um número e no mínimo 6 carateres">
+                            <i class="fa-solid fa-eye senha-icon" id="btn-senha" onclick="mostrarSenha()"></i>
                         </div>
-                        <span class="msg-text"></span>
+                        
                     </div>
                     <div class="input-group">
                         <label for="senha2">Confirmar Senha <span class="obrigatorio">*</span></label>
                         <div class="input-senha attbr">
-                            <input type="password" placeholder="Digite a senha novamente" required id="senha2" name="senha2" class="senha">
-                            <i class="fa-solid fa-eye-slash senha-icon toggle"></i>
+                            <input type="password" placeholder="Digite a senha novamente" required id="senha2" name="senha2" class="senha2" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" title="A senha deve ter uma letra maiúscula e uma minúscula, um número e no mínimo 6 carateres">
+                            <i class="fa-solid fa-eye senha-icon" id="btn-senha2" onclick="mostrarSenha2()"></i>
                         </div>
-                        <span class="msg-text"></span>
                     </div>
                 <span class="message">Ao criar conta, concorda com os nossos <a href="404.php">Termos e Condições</a></span>
                 <div class="button">
@@ -77,11 +74,38 @@
             </form>
         </div>
     </main>
-
     <?php
     include_once 'php/pages/footer.php';
     ?>
-    <script src="js/validation.js"></script>
+
+    <script>
+        //Não é a melhor prática, de longe!!!
+        function mostrarSenha(){
+        let inputsPass = document.querySelector('.senha')
+        let btnShowPass = document.getElementById('btn-senha')
+
+        if(inputsPass.type === 'password'){
+            inputsPass.setAttribute('type', 'text')
+            btnShowPass.classList.replace('fa-eye', 'fa-eye-slash')
+        }
+        else{
+            inputsPass.setAttribute('type', 'password')
+            btnShowPass.classList.replace('fa-eye-slash', 'fa-eye')
+        }}
+
+        function mostrarSenha2(){
+        let inputsPass = document.querySelector('.senha2')
+        let btnShowPass = document.getElementById('btn-senha2')
+
+        if(inputsPass.type === 'password'){
+            inputsPass.setAttribute('type', 'text')
+            btnShowPass.classList.replace('fa-eye', 'fa-eye-slash')
+        }
+        else{
+            inputsPass.setAttribute('type', 'password')
+            btnShowPass.classList.replace('fa-eye-slash', 'fa-eye')
+        }}
+    </script>
     <!-- FontAwesome JS -->
     <script src="js/all.min.js"></script>
 </body>

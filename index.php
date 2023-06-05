@@ -54,9 +54,9 @@
                 <img src="img/graficos3-1.png" alt="">
             </article>
         </section>
-        <img src="img/layered-waves-haikei (2).svg" class="wave">
+        <!-- <img src="img/layered-waves-haikei (2).svg" class="wave"> -->
         <!-- ------------SERVIÇOS------------------ -->
-        <section class="services-container">
+        <!-- <section class="services-container">
                 <h3 class="services-title">Nossos Serviços</h3>
                 <article class="services-row">
                     <img src="img/alvo.png" alt="">
@@ -73,7 +73,7 @@
                     <h2>Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </article>
-            </section>
+            </section> -->
     </main>
     <!-- ---------------RODAPÉ----------------- -->
     <?php
